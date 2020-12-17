@@ -36,9 +36,9 @@ public class Student {
     }
 
     public void vypisZnamky() {
-        for (Map.Entry<String, ArrayList<Integer>> entry : znamky.entrySet()) {
-            System.out.print(entry.getKey() + " | ");
-            for (int predmZ : entry.getValue()) {
+        for (Map.Entry<String, ArrayList<Integer>> vstup : znamky.entrySet()) {
+            System.out.print(vstup.getKey() + " | ");
+            for (int predmZ : vstup.getValue()) {
                 System.out.print(predmZ + " ");
             }
             System.out.println();
